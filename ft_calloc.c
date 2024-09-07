@@ -20,12 +20,13 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	i = 0;
 	ptr = malloc(size * nmemb);
 	while (i < nmemb)
-		ptr[i++] = '0';
+		ptr[i++] = 0;
 	return ((void *)(ptr));
 }
-
+/*
 int main()
 {
 	char *ptr = ft_calloc(5,1);
 	printf("%s",ptr);
 }
+*/
