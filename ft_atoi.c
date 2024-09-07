@@ -15,7 +15,7 @@
 int	ft_atoi(const char *nptr)
 {
 	size_t	i;
-	size_t	mines;
+	int		mines;
 	int		nb;
 
 	i = 0;

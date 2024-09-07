@@ -35,7 +35,7 @@ char *ft_strtrim(char const *s1, char const *set)
 	j = strlen(s1);
 	while (s1[i] && ft_check(s1[i],set))
 		i++;
-	while ((s1[j] === set[0]) && ft_check(s1[j],set))
+	while ((s1[j] == set[0]) && ft_check(s1[j],set))
 		j--;
 	ptr = malloc(strlen(s1) + 1);
 	j = 0;

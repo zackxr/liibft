@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smaksiss <soufianmaksiss@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/02 09:42:18 by smaksiss          #+#    #+#             */
-/*   Updated: 2024/09/02 09:42:18 by smaksiss         ###   ########.fr       */
+/*   Created: 2024/09/07 18:55:58 by smaksiss          #+#    #+#             */
+/*   Updated: 2024/09/07 18:55:58 by smaksiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+void ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (c >= 'a' && c <= 'z')
-		c -= 32;
-	return (c);
+	new->next = *lst;
+	lst = new;
 }
